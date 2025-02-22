@@ -1,0 +1,7 @@
+# basic_example.qp
+# Dieses Programm demonstriert die Basisbefehle:
+H 0
+X 1
+Z 2
+CNOT 0 1
+MEASURE

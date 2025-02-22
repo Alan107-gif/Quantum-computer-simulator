@@ -1,0 +1,26 @@
+# extended_example.qp
+# nicht vergessen beim start die richtige Qbitanzahl hinzuschreiben
+# Demonstration aller erweiterten Befehle und Makrodefinitionen:
+
+# Einzelne Gates:
+H 0
+X 1
+Y 2
+Z 0
+S 1
+T 2
+CNOT 0 1
+CZ 1 2
+SWAP 0 2
+
+# Definition eines Makros zur Erzeugung eines Bell-Zustands:
+DEF BELL
+  H 0
+  CNOT 0 1
+END
+
+# Makroaufruf:
+CALL BELL
+
+# Abschluss: Messung des Registers
+MEASURE
